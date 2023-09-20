@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Maven+Pro:wght@400;600;800&display=swap');
+/* font-family: 'Inter', sans-serif;
+font-family: 'Maven Pro', sans-serif; */
+:root{
+    --margin-elements-main: auto 8rem;
+    --color-main: #FED001;
+    --color-secondary: #2A2A2A;
+    --color-title-secondary: #071D2E;
+    --color-background-cta: #003464;
+    --font-semibold: 600;
+    --transition-buttom: background-color .1s, color .1s;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    font-size: 62.5%;
+    font-family: 'Maven Pro', sans-serif;
+}
+header{
+    background-color: var(--color-secondary);
+    height: 13rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    width: 16rem;
+    height: 7rem;
+    margin: var(--margin-elements-main);
+}
+header .menu-main{
+    /* border: 2px solid blueviolet; */
+    margin: var(--margin-elements-main);
+    width: 40rem;
+    text-align: center;
+}
+.menu-main ul{
+    /* border: 3px solid orangered; */
+    display: flex;
+    justify-content: space-between;
+}
+.menu-main ul li{
+    display: inline-block;
+    margin: auto .5rem;
+}
+.menu-main ul li a{
+    color: var(--color-main);
+    font-size: 1.6rem;
+    font-weight: var(--font-semibold);
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: 1px solid var(--color-main);
+    padding: 1.3rem;
+    transition: color .1s;
+}
+.menu-main ul li a:hover{
+    color: #fff;
+    outline: 1px solid #fff;
+}
+.hero{
+    height: 66rem;
+    background-image: linear-gradient(#fff, #FFFF38);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero img{
+    margin: auto 8rem 0 auto;
+}
+.hero-saiba_mais{
+    display: flex;
+    flex-direction: column;
+    width: 55rem;
+    margin: var(--margin-elements-main);
+}
+.hero-saiba_mais h1{
+    font-size: 6.8rem;
+    color: var(--color-secondary);
+}
+.hero-saiba_mais a{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.8rem;
+    font-weight: var(--font-semibold);
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--color-secondary);
+    background-color: var(--color-main);
+    width: fit-content;
+    padding: 1.5rem 4.5rem;
+    margin-top: 4.5rem;
+    transition: var(--transition-buttom);
+}
+.hero-saiba_mais a:hover{
+    background-color: var(--color-secondary);
+    color: var(--color-main);
+}
+#main-courses{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100rem; */
+}
+#main-courses main{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    height: 52rem;
+}
+.main-courses-components{
+    /* border: 2px solid orangered; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 39rem;
+    height: 86%;
+    box-shadow: .5px .5px 2px rgba(0, 0, 0, 0.3);
+    transition: box-shadow .3s;
+}
+.main-courses-components:hover{
+    box-shadow: .5px .5px 2px rgba(0, 0, 0, 1);
+}
+.main-courses-components img{
+    height: 20rem;
+    width: 100%;
+}
+.main-courses-componentes_text{
+    /* border: 2px solid black; */
+    height: calc(100% - 20rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto 4rem;
+}
+.main-courses-componentes_text h1{
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+.main-courses-componentes_text p{
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}
+#main-courses > h1{
+    color: var(--color-title-secondary);
+    font-size: 4.0rem;
+    font-weight: 600;
+    margin: 7rem auto;
+}
+#main-courses > a{
+    font-size: 1.8rem;
+    font-weight: var(--font-semibold);
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    background-color: var(--color-main);
+    padding: 1.5rem 3rem;
+    margin-bottom: 15rem;
+    transition: var(--transition-buttom);
+}
+#main-courses > a:hover{
+    background-color: var(--color-secondary);
+    color: var(--color-main);
+}
+#cta{
+    background-color: var(--color-background-cta);
+    display: flex;
+    justify-content: center;
+    height: 56rem;
+}
+#cta img{
+    height: 50rem;
+    /* width: 100%; */
+    margin-top: 5.99rem;
+    margin-left: 8rem;
+}
+.cta-nossa_escola{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: var(--margin-elements-main);
+    height: 100%;
+}
+.cta-nossa_escola h1{
+    font-size: 4.0rem;
+    font-weight: var(--font-semibold);
+    color: #fff;
+}
+.cta-nossa_escola p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+}
+#contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 88rem;
+}
+#contatos h1{
+    font-size: 4.0rem;
+    font-weight: var(--font-semibold);
+}
+.contatos-endereco{
+    /* border: 2px solid blue; */
+}
+.contatos-endereco iframe{
+    outline: 5px solid var(--color-main);
+}
+.contatos-endereco p{
+    text-align: right;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    margin-top: 4rem;
+}
+footer{
+    background-color: var(--color-secondary);
+    height: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 400;
+}
