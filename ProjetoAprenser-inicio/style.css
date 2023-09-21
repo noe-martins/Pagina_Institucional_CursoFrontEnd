@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Maven+Pro:wght@400;600;800&display=swap');
-/* font-family: 'Inter', sans-serif;
-font-family: 'Maven Pro', sans-serif; */
 :root{
     --margin-elements-main: auto 8rem;
     --color-main: #FED001;
@@ -19,6 +17,7 @@ html,
 body{
     font-size: 62.5%;
     font-family: 'Maven Pro', sans-serif;
+    scroll-behavior: smooth;
 }
 header{
     background-color: var(--color-secondary);
@@ -33,13 +32,11 @@ header img{
     margin: var(--margin-elements-main);
 }
 header .menu-main{
-    /* border: 2px solid blueviolet; */
     margin: var(--margin-elements-main);
     width: 40rem;
     text-align: center;
 }
 .menu-main ul{
-    /* border: 3px solid orangered; */
     display: flex;
     justify-content: space-between;
 }
@@ -99,21 +96,17 @@ header .menu-main{
     color: var(--color-main);
 }
 #main-courses{
-    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 100rem; */
 }
 #main-courses main{
-    /* border: 2px solid blue; */
     display: flex;
     justify-content: center;
     gap: 2.5rem;
     height: 52rem;
 }
 .main-courses-components{
-    /* border: 2px solid orangered; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -130,7 +123,6 @@ header .menu-main{
     width: 100%;
 }
 .main-courses-componentes_text{
-    /* border: 2px solid black; */
     height: calc(100% - 20rem);
     display: flex;
     flex-direction: column;
@@ -173,12 +165,10 @@ header .menu-main{
 }
 #cta img{
     height: 50rem;
-    /* width: 100%; */
     margin-top: 5.99rem;
     margin-left: 8rem;
 }
 .cta-nossa_escola{
-    /* border: 2px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -205,9 +195,6 @@ header .menu-main{
 #contatos h1{
     font-size: 4.0rem;
     font-weight: var(--font-semibold);
-}
-.contatos-endereco{
-    /* border: 2px solid blue; */
 }
 .contatos-endereco iframe{
     outline: 5px solid var(--color-main);
